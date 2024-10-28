@@ -16,107 +16,74 @@ topology:
       image: vrnetlab/cisco_iol:L2-17.12.01
       type: l2
       mgmt-ipv4: 172.10.101.12
-      stages:
-        create:
-          wait-for:
-            - node: csw-1
-              stage: configure
     dsw-1:
       kind: cisco_iol
       image: vrnetlab/cisco_iol:L2-17.12.01
       type: l2
       mgmt-ipv4: 172.10.101.13
-      stages:
-        create:
-          wait-for:
-            - node: csw-2
-              stage: configure
     dsw-2:
       kind: cisco_iol
       image: vrnetlab/cisco_iol:L2-17.12.01
       type: l2
       mgmt-ipv4: 172.10.101.14
-      stages:
-        create:
-          wait-for:
-            - node: dsw-1
-              stage: configure
     dsw-3:
       kind: cisco_iol
       image: vrnetlab/cisco_iol:L2-17.12.01
       type: l2
       mgmt-ipv4: 172.10.101.15
-      stages:
-        create:
-          wait-for:
-            - node: dsw-2
-              stage: configure
     dsw-4:
       kind: cisco_iol
       image: vrnetlab/cisco_iol:L2-17.12.01
       type: l2
       mgmt-ipv4: 172.10.101.16
-      stages:
-        create:
-          wait-for:
-            - node: dsw-3
-              stage: configure
     asw-100:
       kind: cisco_iol
       image: vrnetlab/cisco_iol:L2-17.12.01
       type: l2
       mgmt-ipv4: 172.10.101.17
-      stages:
-        create:
-          wait-for:
-            - node: dsw-4
-              stage: configure
     asw-101:
       kind: cisco_iol
       image: vrnetlab/cisco_iol:L2-17.12.01
       type: l2
       mgmt-ipv4: 172.10.101.18
-      stages:
-        create:
-          wait-for:
-            - node: asw-100
-              stage: configure
     asw-200:
       kind: cisco_iol
       image: vrnetlab/cisco_iol:L2-17.12.01
       type: l2
       mgmt-ipv4: 172.10.101.19
-      stages:
-        create:
-          wait-for:
-            - node: asw-101
-              stage: configure
     asw-201:
       kind: cisco_iol
       image: vrnetlab/cisco_iol:L2-17.12.01
       type: l2
       mgmt-ipv4: 172.10.101.20
-      stages:
-        create:
-          wait-for:
-            - node: asw-200
-              stage: configure
     pc-1:
       kind: linux
-      image: alpine:latest
-      network-mode: none
+      mgmt-ipv4: 172.10.101.51
+      image: ghcr.io/srl-labs/network-multitool
+      exec:
+        - ip address add 10.192.100.100/24 dev eth1
+        - ip route add 10.192.0.0/16 via 10.192.100.1 dev eth1
     pc-2:
       kind: linux
-      image: alpine:latest
-      network-mode: none
+      mgmt-ipv4: 172.10.101.52
+      image: ghcr.io/srl-labs/network-multitool
+      exec:
+        - ip address add 10.192.101.100/24 dev eth1
+        - ip route add 10.192.0.0/16 via 10.192.101.1 dev eth1
     pc-3:
       kind: linux
-      image: alpine:latest
-      network-mode: none
+      mgmt-ipv4: 172.10.101.53
+      image: ghcr.io/srl-labs/network-multitool
+      exec:
+        - ip address add 10.192.200.100/24 dev eth1
+        - ip route add 10.192.0.0/16 via 10.192.200.1 dev eth1
     pc-4:
       kind: linux
-      image: alpine:latest
-      network-mode: none
+      mgmt-ipv4: 172.10.101.54
+      image: ghcr.io/srl-labs/network-multitool
+      exec:
+        - ip address add 10.192.201.100/24 dev eth1
+        - ip route add 10.192.0.0/16 via 10.192.201.1 dev eth1
 
   links:
     - endpoints: ["csw-1:e0/1", "csw-2:e0/1"]
@@ -140,8 +107,8 @@ topology:
     - endpoints: ["dsw-3:e2/1", "asw-201:e0/1"]
     - endpoints: ["dsw-4:e2/0", "asw-200:e0/2"]
     - endpoints: ["dsw-4:e2/1", "asw-201:e0/2"]
-    - endpoints: ["asw-100:e0/3", "pc-1:eth0"]
-    - endpoints: ["asw-101:e0/3", "pc-2:eth0"]
-    - endpoints: ["asw-200:e0/3", "pc-3:eth0"]
-    - endpoints: ["asw-201:e0/3", "pc-4:eth0"]
+    - endpoints: ["asw-100:e0/3", "pc-1:eth1"]
+    - endpoints: ["asw-101:e0/3", "pc-2:eth1"]
+    - endpoints: ["asw-200:e0/3", "pc-3:eth1"]
+    - endpoints: ["asw-201:e0/3", "pc-4:eth1"]
 

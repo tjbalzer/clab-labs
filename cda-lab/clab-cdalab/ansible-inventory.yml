@@ -34,10 +34,10 @@ all:
     linux:
       hosts:
         clab-cdalab-pc-1:
-          ansible_host: 
+          ansible_host: 172.10.101.51
         clab-cdalab-pc-2:
-          ansible_host: 
+          ansible_host: 172.10.101.52
         clab-cdalab-pc-3:
-          ansible_host: 
+          ansible_host: 172.10.101.53
         clab-cdalab-pc-4:
-          ansible_host: 
+          ansible_host: 172.10.101.54

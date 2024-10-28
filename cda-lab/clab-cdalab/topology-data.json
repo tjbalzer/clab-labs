@@ -6,10 +6,9 @@
       "prefix": "clab",
       "mgmt": {
         "network": "cda",
-        "bridge": "br-ab78a95824b2",
+        "bridge": "br-aedbd6165b7e",
         "ipv4-subnet": "172.10.101.0/24",
         "ipv4-gw": "172.10.101.1",
-        "ipv6-gw": "fe80::42:28ff:fe8a:222c",
         "external-access": true
       }
     }
@@ -21,7 +20,7 @@
       "longname": "clab-cdalab-asw-100",
       "fqdn": "asw-100.cdalab.io",
       "group": "",
-      "labdir": "/home/tom/containerlab/cda/clab-cdalab/asw-100",
+      "labdir": "/home/tom/clab-labs/cda-lab/clab-cdalab/asw-100",
       "kind": "cisco_iol",
       "image": "vrnetlab/cisco_iol:L2-17.12.01",
       "mgmt-net": "",
@@ -32,14 +31,14 @@
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-mgmt-net-bridge": "br-aedbd6165b7e",
         "clab-node-group": "",
         "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/asw-100",
+        "clab-node-lab-dir": "/home/tom/clab-labs/cda-lab/clab-cdalab/asw-100",
         "clab-node-name": "asw-100",
         "clab-node-type": "l2",
         "clab-owner": "tom",
-        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "clab-topo-file": "/home/tom/clab-labs/cda-lab/cdalab.clab.yaml",
         "containerlab": "cdalab"
       },
       "port-bindings": [
@@ -51,7 +50,7 @@
       "longname": "clab-cdalab-asw-101",
       "fqdn": "asw-101.cdalab.io",
       "group": "",
-      "labdir": "/home/tom/containerlab/cda/clab-cdalab/asw-101",
+      "labdir": "/home/tom/clab-labs/cda-lab/clab-cdalab/asw-101",
       "kind": "cisco_iol",
       "image": "vrnetlab/cisco_iol:L2-17.12.01",
       "mgmt-net": "",
@@ -62,14 +61,14 @@
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-mgmt-net-bridge": "br-aedbd6165b7e",
         "clab-node-group": "",
         "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/asw-101",
+        "clab-node-lab-dir": "/home/tom/clab-labs/cda-lab/clab-cdalab/asw-101",
         "clab-node-name": "asw-101",
         "clab-node-type": "l2",
         "clab-owner": "tom",
-        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "clab-topo-file": "/home/tom/clab-labs/cda-lab/cdalab.clab.yaml",
         "containerlab": "cdalab"
       },
       "port-bindings": [
@@ -81,7 +80,7 @@
       "longname": "clab-cdalab-asw-200",
       "fqdn": "asw-200.cdalab.io",
       "group": "",
-      "labdir": "/home/tom/containerlab/cda/clab-cdalab/asw-200",
+      "labdir": "/home/tom/clab-labs/cda-lab/clab-cdalab/asw-200",
       "kind": "cisco_iol",
       "image": "vrnetlab/cisco_iol:L2-17.12.01",
       "mgmt-net": "",
@@ -92,14 +91,14 @@
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-mgmt-net-bridge": "br-aedbd6165b7e",
         "clab-node-group": "",
         "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/asw-200",
+        "clab-node-lab-dir": "/home/tom/clab-labs/cda-lab/clab-cdalab/asw-200",
         "clab-node-name": "asw-200",
         "clab-node-type": "l2",
         "clab-owner": "tom",
-        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "clab-topo-file": "/home/tom/clab-labs/cda-lab/cdalab.clab.yaml",
         "containerlab": "cdalab"
       },
       "port-bindings": [
@@ -111,7 +110,7 @@
       "longname": "clab-cdalab-asw-201",
       "fqdn": "asw-201.cdalab.io",
       "group": "",
-      "labdir": "/home/tom/containerlab/cda/clab-cdalab/asw-201",
+      "labdir": "/home/tom/clab-labs/cda-lab/clab-cdalab/asw-201",
       "kind": "cisco_iol",
       "image": "vrnetlab/cisco_iol:L2-17.12.01",
       "mgmt-net": "",
@@ -122,14 +121,14 @@
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-mgmt-net-bridge": "br-aedbd6165b7e",
         "clab-node-group": "",
         "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/asw-201",
+        "clab-node-lab-dir": "/home/tom/clab-labs/cda-lab/clab-cdalab/asw-201",
         "clab-node-name": "asw-201",
         "clab-node-type": "l2",
         "clab-owner": "tom",
-        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "clab-topo-file": "/home/tom/clab-labs/cda-lab/cdalab.clab.yaml",
         "containerlab": "cdalab"
       },
       "port-bindings": [
@@ -141,7 +140,7 @@
       "longname": "clab-cdalab-csw-1",
       "fqdn": "csw-1.cdalab.io",
       "group": "",
-      "labdir": "/home/tom/containerlab/cda/clab-cdalab/csw-1",
+      "labdir": "/home/tom/clab-labs/cda-lab/clab-cdalab/csw-1",
       "kind": "cisco_iol",
       "image": "vrnetlab/cisco_iol:L2-17.12.01",
       "mgmt-net": "",
@@ -152,14 +151,14 @@
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-mgmt-net-bridge": "br-aedbd6165b7e",
         "clab-node-group": "",
         "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/csw-1",
+        "clab-node-lab-dir": "/home/tom/clab-labs/cda-lab/clab-cdalab/csw-1",
         "clab-node-name": "csw-1",
         "clab-node-type": "l2",
         "clab-owner": "tom",
-        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "clab-topo-file": "/home/tom/clab-labs/cda-lab/cdalab.clab.yaml",
         "containerlab": "cdalab"
       },
       "port-bindings": [
@@ -171,7 +170,7 @@
       "longname": "clab-cdalab-csw-2",
       "fqdn": "csw-2.cdalab.io",
       "group": "",
-      "labdir": "/home/tom/containerlab/cda/clab-cdalab/csw-2",
+      "labdir": "/home/tom/clab-labs/cda-lab/clab-cdalab/csw-2",
       "kind": "cisco_iol",
       "image": "vrnetlab/cisco_iol:L2-17.12.01",
       "mgmt-net": "",
@@ -182,14 +181,14 @@
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-mgmt-net-bridge": "br-aedbd6165b7e",
         "clab-node-group": "",
         "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/csw-2",
+        "clab-node-lab-dir": "/home/tom/clab-labs/cda-lab/clab-cdalab/csw-2",
         "clab-node-name": "csw-2",
         "clab-node-type": "l2",
         "clab-owner": "tom",
-        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "clab-topo-file": "/home/tom/clab-labs/cda-lab/cdalab.clab.yaml",
         "containerlab": "cdalab"
       },
       "port-bindings": [
@@ -201,7 +200,7 @@
       "longname": "clab-cdalab-dsw-1",
       "fqdn": "dsw-1.cdalab.io",
       "group": "",
-      "labdir": "/home/tom/containerlab/cda/clab-cdalab/dsw-1",
+      "labdir": "/home/tom/clab-labs/cda-lab/clab-cdalab/dsw-1",
       "kind": "cisco_iol",
       "image": "vrnetlab/cisco_iol:L2-17.12.01",
       "mgmt-net": "",
@@ -212,14 +211,14 @@
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-mgmt-net-bridge": "br-aedbd6165b7e",
         "clab-node-group": "",
         "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/dsw-1",
+        "clab-node-lab-dir": "/home/tom/clab-labs/cda-lab/clab-cdalab/dsw-1",
         "clab-node-name": "dsw-1",
         "clab-node-type": "l2",
         "clab-owner": "tom",
-        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "clab-topo-file": "/home/tom/clab-labs/cda-lab/cdalab.clab.yaml",
         "containerlab": "cdalab"
       },
       "port-bindings": [
@@ -231,7 +230,7 @@
       "longname": "clab-cdalab-dsw-2",
       "fqdn": "dsw-2.cdalab.io",
       "group": "",
-      "labdir": "/home/tom/containerlab/cda/clab-cdalab/dsw-2",
+      "labdir": "/home/tom/clab-labs/cda-lab/clab-cdalab/dsw-2",
       "kind": "cisco_iol",
       "image": "vrnetlab/cisco_iol:L2-17.12.01",
       "mgmt-net": "",
@@ -242,14 +241,14 @@
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-mgmt-net-bridge": "br-aedbd6165b7e",
         "clab-node-group": "",
         "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/dsw-2",
+        "clab-node-lab-dir": "/home/tom/clab-labs/cda-lab/clab-cdalab/dsw-2",
         "clab-node-name": "dsw-2",
         "clab-node-type": "l2",
         "clab-owner": "tom",
-        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "clab-topo-file": "/home/tom/clab-labs/cda-lab/cdalab.clab.yaml",
         "containerlab": "cdalab"
       },
       "port-bindings": [
@@ -261,7 +260,7 @@
       "longname": "clab-cdalab-dsw-3",
       "fqdn": "dsw-3.cdalab.io",
       "group": "",
-      "labdir": "/home/tom/containerlab/cda/clab-cdalab/dsw-3",
+      "labdir": "/home/tom/clab-labs/cda-lab/clab-cdalab/dsw-3",
       "kind": "cisco_iol",
       "image": "vrnetlab/cisco_iol:L2-17.12.01",
       "mgmt-net": "",
@@ -272,14 +271,14 @@
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-mgmt-net-bridge": "br-aedbd6165b7e",
         "clab-node-group": "",
         "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/dsw-3",
+        "clab-node-lab-dir": "/home/tom/clab-labs/cda-lab/clab-cdalab/dsw-3",
         "clab-node-name": "dsw-3",
         "clab-node-type": "l2",
         "clab-owner": "tom",
-        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "clab-topo-file": "/home/tom/clab-labs/cda-lab/cdalab.clab.yaml",
         "containerlab": "cdalab"
       },
       "port-bindings": [
@@ -291,7 +290,7 @@
       "longname": "clab-cdalab-dsw-4",
       "fqdn": "dsw-4.cdalab.io",
       "group": "",
-      "labdir": "/home/tom/containerlab/cda/clab-cdalab/dsw-4",
+      "labdir": "/home/tom/clab-labs/cda-lab/clab-cdalab/dsw-4",
       "kind": "cisco_iol",
       "image": "vrnetlab/cisco_iol:L2-17.12.01",
       "mgmt-net": "",
@@ -302,14 +301,14 @@
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-mgmt-net-bridge": "br-aedbd6165b7e",
         "clab-node-group": "",
         "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/dsw-4",
+        "clab-node-lab-dir": "/home/tom/clab-labs/cda-lab/clab-cdalab/dsw-4",
         "clab-node-name": "dsw-4",
         "clab-node-type": "l2",
         "clab-owner": "tom",
-        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "clab-topo-file": "/home/tom/clab-labs/cda-lab/cdalab.clab.yaml",
         "containerlab": "cdalab"
       },
       "port-bindings": [
@@ -321,28 +320,58 @@
       "longname": "clab-cdalab-pc-1",
       "fqdn": "pc-1.cdalab.io",
       "group": "",
-      "labdir": "/home/tom/containerlab/cda/clab-cdalab/pc-1",
+      "labdir": "/home/tom/clab-labs/cda-lab/clab-cdalab/pc-1",
       "kind": "linux",
-      "image": "alpine:latest",
+      "image": "ghcr.io/srl-labs/network-multitool",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "",
-      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv4-address": "172.10.101.51",
+      "mgmt-ipv4-prefix-length": 24,
       "mgmt-ipv6-address": "",
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-mgmt-net-bridge": "br-aedbd6165b7e",
         "clab-node-group": "",
         "clab-node-kind": "linux",
-        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/pc-1",
+        "clab-node-lab-dir": "/home/tom/clab-labs/cda-lab/clab-cdalab/pc-1",
         "clab-node-name": "pc-1",
         "clab-node-type": "",
         "clab-owner": "tom",
-        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "clab-topo-file": "/home/tom/clab-labs/cda-lab/cdalab.clab.yaml",
         "containerlab": "cdalab"
       },
       "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
       ]
     },
     "pc-2": {
@@ -351,28 +380,58 @@
       "longname": "clab-cdalab-pc-2",
       "fqdn": "pc-2.cdalab.io",
       "group": "",
-      "labdir": "/home/tom/containerlab/cda/clab-cdalab/pc-2",
+      "labdir": "/home/tom/clab-labs/cda-lab/clab-cdalab/pc-2",
       "kind": "linux",
-      "image": "alpine:latest",
+      "image": "ghcr.io/srl-labs/network-multitool",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "",
-      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv4-address": "172.10.101.52",
+      "mgmt-ipv4-prefix-length": 24,
       "mgmt-ipv6-address": "",
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-mgmt-net-bridge": "br-aedbd6165b7e",
         "clab-node-group": "",
         "clab-node-kind": "linux",
-        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/pc-2",
+        "clab-node-lab-dir": "/home/tom/clab-labs/cda-lab/clab-cdalab/pc-2",
         "clab-node-name": "pc-2",
         "clab-node-type": "",
         "clab-owner": "tom",
-        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "clab-topo-file": "/home/tom/clab-labs/cda-lab/cdalab.clab.yaml",
         "containerlab": "cdalab"
       },
       "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
       ]
     },
     "pc-3": {
@@ -381,28 +440,58 @@
       "longname": "clab-cdalab-pc-3",
       "fqdn": "pc-3.cdalab.io",
       "group": "",
-      "labdir": "/home/tom/containerlab/cda/clab-cdalab/pc-3",
+      "labdir": "/home/tom/clab-labs/cda-lab/clab-cdalab/pc-3",
       "kind": "linux",
-      "image": "alpine:latest",
+      "image": "ghcr.io/srl-labs/network-multitool",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "",
-      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv4-address": "172.10.101.53",
+      "mgmt-ipv4-prefix-length": 24,
       "mgmt-ipv6-address": "",
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-mgmt-net-bridge": "br-aedbd6165b7e",
         "clab-node-group": "",
         "clab-node-kind": "linux",
-        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/pc-3",
+        "clab-node-lab-dir": "/home/tom/clab-labs/cda-lab/clab-cdalab/pc-3",
         "clab-node-name": "pc-3",
         "clab-node-type": "",
         "clab-owner": "tom",
-        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "clab-topo-file": "/home/tom/clab-labs/cda-lab/cdalab.clab.yaml",
         "containerlab": "cdalab"
       },
       "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
       ]
     },
     "pc-4": {
@@ -411,28 +500,58 @@
       "longname": "clab-cdalab-pc-4",
       "fqdn": "pc-4.cdalab.io",
       "group": "",
-      "labdir": "/home/tom/containerlab/cda/clab-cdalab/pc-4",
+      "labdir": "/home/tom/clab-labs/cda-lab/clab-cdalab/pc-4",
       "kind": "linux",
-      "image": "alpine:latest",
+      "image": "ghcr.io/srl-labs/network-multitool",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "",
-      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv4-address": "172.10.101.54",
+      "mgmt-ipv4-prefix-length": 24,
       "mgmt-ipv6-address": "",
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-mgmt-net-bridge": "br-aedbd6165b7e",
         "clab-node-group": "",
         "clab-node-kind": "linux",
-        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/pc-4",
+        "clab-node-lab-dir": "/home/tom/clab-labs/cda-lab/clab-cdalab/pc-4",
         "clab-node-name": "pc-4",
         "clab-node-type": "",
         "clab-owner": "tom",
-        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "clab-topo-file": "/home/tom/clab-labs/cda-lab/cdalab.clab.yaml",
         "containerlab": "cdalab"
       },
       "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
       ]
     }
   },
@@ -441,13 +560,13 @@
       "a": {
         "node": "csw-1",
         "interface": "eth1",
-        "mac": "aa:c1:ab:54:c2:24",
+        "mac": "aa:c1:ab:dd:d5:c2",
         "peer": "z"
       },
       "z": {
         "node": "csw-2",
         "interface": "eth1",
-        "mac": "aa:c1:ab:1c:f0:27",
+        "mac": "aa:c1:ab:06:e4:b0",
         "peer": "a"
       }
     },
@@ -455,13 +574,13 @@
       "a": {
         "node": "csw-1",
         "interface": "eth4",
-        "mac": "aa:c1:ab:f5:e9:61",
+        "mac": "aa:c1:ab:f6:46:19",
         "peer": "z"
       },
       "z": {
         "node": "dsw-1",
         "interface": "eth4",
-        "mac": "aa:c1:ab:00:44:a1",
+        "mac": "aa:c1:ab:c5:d1:c6",
         "peer": "a"
       }
     },
@@ -469,13 +588,13 @@
       "a": {
         "node": "csw-1",
         "interface": "eth5",
-        "mac": "aa:c1:ab:bf:96:ef",
+        "mac": "aa:c1:ab:d1:b1:74",
         "peer": "z"
       },
       "z": {
         "node": "dsw-2",
         "interface": "eth4",
-        "mac": "aa:c1:ab:72:c3:87",
+        "mac": "aa:c1:ab:27:35:e7",
         "peer": "a"
       }
     },
@@ -483,13 +602,13 @@
       "a": {
         "node": "csw-1",
         "interface": "eth6",
-        "mac": "aa:c1:ab:c1:28:76",
+        "mac": "aa:c1:ab:6c:30:a8",
         "peer": "z"
       },
       "z": {
         "node": "dsw-3",
         "interface": "eth4",
-        "mac": "aa:c1:ab:52:c6:31",
+        "mac": "aa:c1:ab:42:14:9f",
         "peer": "a"
       }
     },
@@ -497,13 +616,13 @@
       "a": {
         "node": "csw-1",
         "interface": "eth7",
-        "mac": "aa:c1:ab:cf:6e:34",
+        "mac": "aa:c1:ab:5f:c9:bf",
         "peer": "z"
       },
       "z": {
         "node": "dsw-4",
         "interface": "eth4",
-        "mac": "aa:c1:ab:47:e1:45",
+        "mac": "aa:c1:ab:f0:0c:de",
         "peer": "a"
       }
     },
@@ -511,13 +630,13 @@
       "a": {
         "node": "csw-2",
         "interface": "eth4",
-        "mac": "aa:c1:ab:da:34:25",
+        "mac": "aa:c1:ab:14:5f:59",
         "peer": "z"
       },
       "z": {
         "node": "dsw-1",
         "interface": "eth5",
-        "mac": "aa:c1:ab:6a:de:de",
+        "mac": "aa:c1:ab:d8:ac:90",
         "peer": "a"
       }
     },
@@ -525,13 +644,13 @@
       "a": {
         "node": "csw-2",
         "interface": "eth5",
-        "mac": "aa:c1:ab:49:c2:77",
+        "mac": "aa:c1:ab:1b:6b:11",
         "peer": "z"
       },
       "z": {
         "node": "dsw-2",
         "interface": "eth5",
-        "mac": "aa:c1:ab:d2:80:9d",
+        "mac": "aa:c1:ab:8a:da:c4",
         "peer": "a"
       }
     },
@@ -539,13 +658,13 @@
       "a": {
         "node": "csw-2",
         "interface": "eth6",
-        "mac": "aa:c1:ab:06:fa:58",
+        "mac": "aa:c1:ab:f5:da:c4",
         "peer": "z"
       },
       "z": {
         "node": "dsw-3",
         "interface": "eth5",
-        "mac": "aa:c1:ab:2e:9c:11",
+        "mac": "aa:c1:ab:be:1b:2b",
         "peer": "a"
       }
     },
@@ -553,13 +672,13 @@
       "a": {
         "node": "csw-2",
         "interface": "eth7",
-        "mac": "aa:c1:ab:a5:35:6d",
+        "mac": "aa:c1:ab:61:f4:15",
         "peer": "z"
       },
       "z": {
         "node": "dsw-4",
         "interface": "eth5",
-        "mac": "aa:c1:ab:ca:ca:3c",
+        "mac": "aa:c1:ab:bb:bc:7b",
         "peer": "a"
       }
     },
@@ -567,13 +686,13 @@
       "a": {
         "node": "dsw-1",
         "interface": "eth1",
-        "mac": "aa:c1:ab:64:54:43",
+        "mac": "aa:c1:ab:cc:1c:5e",
         "peer": "z"
       },
       "z": {
         "node": "dsw-2",
         "interface": "eth1",
-        "mac": "aa:c1:ab:b3:b7:bc",
+        "mac": "aa:c1:ab:54:55:0a",
         "peer": "a"
       }
     },
@@ -581,13 +700,13 @@
       "a": {
         "node": "dsw-1",
         "interface": "eth2",
-        "mac": "aa:c1:ab:4c:5b:39",
+        "mac": "aa:c1:ab:4e:d9:d9",
         "peer": "z"
       },
       "z": {
         "node": "dsw-2",
         "interface": "eth2",
-        "mac": "aa:c1:ab:12:f9:db",
+        "mac": "aa:c1:ab:a7:e0:d2",
         "peer": "a"
       }
     },
@@ -595,13 +714,13 @@
       "a": {
         "node": "dsw-3",
         "interface": "eth1",
-        "mac": "aa:c1:ab:0a:27:aa",
+        "mac": "aa:c1:ab:bc:8e:66",
         "peer": "z"
       },
       "z": {
         "node": "dsw-4",
         "interface": "eth1",
-        "mac": "aa:c1:ab:f9:a5:05",
+        "mac": "aa:c1:ab:5d:3b:1e",
         "peer": "a"
       }
     },
@@ -609,13 +728,13 @@
       "a": {
         "node": "dsw-3",
         "interface": "eth2",
-        "mac": "aa:c1:ab:76:5f:d2",
+        "mac": "aa:c1:ab:e9:ac:23",
         "peer": "z"
       },
       "z": {
         "node": "dsw-4",
         "interface": "eth2",
-        "mac": "aa:c1:ab:56:42:ad",
+        "mac": "aa:c1:ab:45:ae:a3",
         "peer": "a"
       }
     },
@@ -623,13 +742,13 @@
       "a": {
         "node": "dsw-1",
         "interface": "eth8",
-        "mac": "aa:c1:ab:64:25:da",
+        "mac": "aa:c1:ab:d3:a1:cc",
         "peer": "z"
       },
       "z": {
         "node": "asw-100",
         "interface": "eth1",
-        "mac": "aa:c1:ab:2e:c5:b9",
+        "mac": "aa:c1:ab:03:21:09",
         "peer": "a"
       }
     },
@@ -637,13 +756,13 @@
       "a": {
         "node": "dsw-1",
         "interface": "eth9",
-        "mac": "aa:c1:ab:d2:9d:96",
+        "mac": "aa:c1:ab:80:2a:a9",
         "peer": "z"
       },
       "z": {
         "node": "asw-101",
         "interface": "eth1",
-        "mac": "aa:c1:ab:2c:ed:c5",
+        "mac": "aa:c1:ab:fc:54:9e",
         "peer": "a"
       }
     },
@@ -651,13 +770,13 @@
       "a": {
         "node": "dsw-2",
         "interface": "eth8",
-        "mac": "aa:c1:ab:56:03:09",
+        "mac": "aa:c1:ab:ee:26:20",
         "peer": "z"
       },
       "z": {
         "node": "asw-100",
         "interface": "eth2",
-        "mac": "aa:c1:ab:f5:07:ae",
+        "mac": "aa:c1:ab:c8:1e:a2",
         "peer": "a"
       }
     },
@@ -665,13 +784,13 @@
       "a": {
         "node": "dsw-2",
         "interface": "eth9",
-        "mac": "aa:c1:ab:92:fc:71",
+        "mac": "aa:c1:ab:90:99:cc",
         "peer": "z"
       },
       "z": {
         "node": "asw-101",
         "interface": "eth2",
-        "mac": "aa:c1:ab:43:a8:c4",
+        "mac": "aa:c1:ab:8e:3a:bb",
         "peer": "a"
       }
     },
@@ -679,13 +798,13 @@
       "a": {
         "node": "dsw-3",
         "interface": "eth8",
-        "mac": "aa:c1:ab:50:06:c8",
+        "mac": "aa:c1:ab:9b:9f:08",
         "peer": "z"
       },
       "z": {
         "node": "asw-200",
         "interface": "eth1",
-        "mac": "aa:c1:ab:ae:78:f0",
+        "mac": "aa:c1:ab:2d:f6:a9",
         "peer": "a"
       }
     },
@@ -693,13 +812,13 @@
       "a": {
         "node": "dsw-3",
         "interface": "eth9",
-        "mac": "aa:c1:ab:a9:6f:b7",
+        "mac": "aa:c1:ab:46:c1:4e",
         "peer": "z"
       },
       "z": {
         "node": "asw-201",
         "interface": "eth1",
-        "mac": "aa:c1:ab:1d:fb:86",
+        "mac": "aa:c1:ab:08:6c:4c",
         "peer": "a"
       }
     },
@@ -707,13 +826,13 @@
       "a": {
         "node": "dsw-4",
         "interface": "eth8",
-        "mac": "aa:c1:ab:bd:9b:1a",
+        "mac": "aa:c1:ab:ed:8a:05",
         "peer": "z"
       },
       "z": {
         "node": "asw-200",
         "interface": "eth2",
-        "mac": "aa:c1:ab:64:89:6d",
+        "mac": "aa:c1:ab:18:39:e6",
         "peer": "a"
       }
     },
@@ -721,13 +840,13 @@
       "a": {
         "node": "dsw-4",
         "interface": "eth9",
-        "mac": "aa:c1:ab:2b:74:08",
+        "mac": "aa:c1:ab:7c:d5:08",
         "peer": "z"
       },
       "z": {
         "node": "asw-201",
         "interface": "eth2",
-        "mac": "aa:c1:ab:b1:df:28",
+        "mac": "aa:c1:ab:75:d7:bd",
         "peer": "a"
       }
     },
@@ -735,13 +854,13 @@
       "a": {
         "node": "asw-100",
         "interface": "eth3",
-        "mac": "aa:c1:ab:b3:1a:d3",
+        "mac": "aa:c1:ab:09:07:0d",
         "peer": "z"
       },
       "z": {
         "node": "pc-1",
-        "interface": "eth0",
-        "mac": "aa:c1:ab:fe:92:d1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:bf:c4:1a",
         "peer": "a"
       }
     },
@@ -749,13 +868,13 @@
       "a": {
         "node": "asw-101",
         "interface": "eth3",
-        "mac": "aa:c1:ab:64:72:04",
+        "mac": "aa:c1:ab:ba:ba:49",
         "peer": "z"
       },
       "z": {
         "node": "pc-2",
-        "interface": "eth0",
-        "mac": "aa:c1:ab:a2:cb:c3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:d2:6b:75",
         "peer": "a"
       }
     },
@@ -763,13 +882,13 @@
       "a": {
         "node": "asw-200",
         "interface": "eth3",
-        "mac": "aa:c1:ab:f3:1c:68",
+        "mac": "aa:c1:ab:c9:49:7a",
         "peer": "z"
       },
       "z": {
         "node": "pc-3",
-        "interface": "eth0",
-        "mac": "aa:c1:ab:f8:47:87",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:ff:17:eb",
         "peer": "a"
       }
     },
@@ -777,13 +896,13 @@
       "a": {
         "node": "asw-201",
         "interface": "eth3",
-        "mac": "aa:c1:ab:d9:7e:25",
+        "mac": "aa:c1:ab:5c:4c:5f",
         "peer": "z"
       },
       "z": {
         "node": "pc-4",
-        "interface": "eth0",
-        "mac": "aa:c1:ab:ce:2e:8b",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:22:0a:f9",
         "peer": "a"
       }
     }
