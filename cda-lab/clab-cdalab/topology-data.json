@@ -1,0 +1,791 @@
+{
+  "name": "cdalab",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "cda",
+        "bridge": "br-ab78a95824b2",
+        "ipv4-subnet": "172.10.101.0/24",
+        "ipv4-gw": "172.10.101.1",
+        "ipv6-gw": "fe80::42:28ff:fe8a:222c",
+        "external-access": true
+      }
+    }
+  },
+  "nodes": {
+    "asw-100": {
+      "index": "0",
+      "shortname": "asw-100",
+      "longname": "clab-cdalab-asw-100",
+      "fqdn": "asw-100.cdalab.io",
+      "group": "",
+      "labdir": "/home/tom/containerlab/cda/clab-cdalab/asw-100",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.12.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.10.101.17",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/asw-100",
+        "clab-node-name": "asw-100",
+        "clab-node-type": "l2",
+        "clab-owner": "tom",
+        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "containerlab": "cdalab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "asw-101": {
+      "index": "1",
+      "shortname": "asw-101",
+      "longname": "clab-cdalab-asw-101",
+      "fqdn": "asw-101.cdalab.io",
+      "group": "",
+      "labdir": "/home/tom/containerlab/cda/clab-cdalab/asw-101",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.12.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.10.101.18",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/asw-101",
+        "clab-node-name": "asw-101",
+        "clab-node-type": "l2",
+        "clab-owner": "tom",
+        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "containerlab": "cdalab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "asw-200": {
+      "index": "2",
+      "shortname": "asw-200",
+      "longname": "clab-cdalab-asw-200",
+      "fqdn": "asw-200.cdalab.io",
+      "group": "",
+      "labdir": "/home/tom/containerlab/cda/clab-cdalab/asw-200",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.12.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.10.101.19",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/asw-200",
+        "clab-node-name": "asw-200",
+        "clab-node-type": "l2",
+        "clab-owner": "tom",
+        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "containerlab": "cdalab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "asw-201": {
+      "index": "3",
+      "shortname": "asw-201",
+      "longname": "clab-cdalab-asw-201",
+      "fqdn": "asw-201.cdalab.io",
+      "group": "",
+      "labdir": "/home/tom/containerlab/cda/clab-cdalab/asw-201",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.12.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.10.101.20",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/asw-201",
+        "clab-node-name": "asw-201",
+        "clab-node-type": "l2",
+        "clab-owner": "tom",
+        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "containerlab": "cdalab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "csw-1": {
+      "index": "4",
+      "shortname": "csw-1",
+      "longname": "clab-cdalab-csw-1",
+      "fqdn": "csw-1.cdalab.io",
+      "group": "",
+      "labdir": "/home/tom/containerlab/cda/clab-cdalab/csw-1",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.12.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.10.101.11",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/csw-1",
+        "clab-node-name": "csw-1",
+        "clab-node-type": "l2",
+        "clab-owner": "tom",
+        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "containerlab": "cdalab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "csw-2": {
+      "index": "5",
+      "shortname": "csw-2",
+      "longname": "clab-cdalab-csw-2",
+      "fqdn": "csw-2.cdalab.io",
+      "group": "",
+      "labdir": "/home/tom/containerlab/cda/clab-cdalab/csw-2",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.12.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.10.101.12",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/csw-2",
+        "clab-node-name": "csw-2",
+        "clab-node-type": "l2",
+        "clab-owner": "tom",
+        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "containerlab": "cdalab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "dsw-1": {
+      "index": "6",
+      "shortname": "dsw-1",
+      "longname": "clab-cdalab-dsw-1",
+      "fqdn": "dsw-1.cdalab.io",
+      "group": "",
+      "labdir": "/home/tom/containerlab/cda/clab-cdalab/dsw-1",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.12.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.10.101.13",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/dsw-1",
+        "clab-node-name": "dsw-1",
+        "clab-node-type": "l2",
+        "clab-owner": "tom",
+        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "containerlab": "cdalab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "dsw-2": {
+      "index": "7",
+      "shortname": "dsw-2",
+      "longname": "clab-cdalab-dsw-2",
+      "fqdn": "dsw-2.cdalab.io",
+      "group": "",
+      "labdir": "/home/tom/containerlab/cda/clab-cdalab/dsw-2",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.12.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.10.101.14",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/dsw-2",
+        "clab-node-name": "dsw-2",
+        "clab-node-type": "l2",
+        "clab-owner": "tom",
+        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "containerlab": "cdalab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "dsw-3": {
+      "index": "8",
+      "shortname": "dsw-3",
+      "longname": "clab-cdalab-dsw-3",
+      "fqdn": "dsw-3.cdalab.io",
+      "group": "",
+      "labdir": "/home/tom/containerlab/cda/clab-cdalab/dsw-3",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.12.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.10.101.15",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/dsw-3",
+        "clab-node-name": "dsw-3",
+        "clab-node-type": "l2",
+        "clab-owner": "tom",
+        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "containerlab": "cdalab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "dsw-4": {
+      "index": "9",
+      "shortname": "dsw-4",
+      "longname": "clab-cdalab-dsw-4",
+      "fqdn": "dsw-4.cdalab.io",
+      "group": "",
+      "labdir": "/home/tom/containerlab/cda/clab-cdalab/dsw-4",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.12.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.10.101.16",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/dsw-4",
+        "clab-node-name": "dsw-4",
+        "clab-node-type": "l2",
+        "clab-owner": "tom",
+        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "containerlab": "cdalab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc-1": {
+      "index": "10",
+      "shortname": "pc-1",
+      "longname": "clab-cdalab-pc-1",
+      "fqdn": "pc-1.cdalab.io",
+      "group": "",
+      "labdir": "/home/tom/containerlab/cda/clab-cdalab/pc-1",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/pc-1",
+        "clab-node-name": "pc-1",
+        "clab-node-type": "",
+        "clab-owner": "tom",
+        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "containerlab": "cdalab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc-2": {
+      "index": "11",
+      "shortname": "pc-2",
+      "longname": "clab-cdalab-pc-2",
+      "fqdn": "pc-2.cdalab.io",
+      "group": "",
+      "labdir": "/home/tom/containerlab/cda/clab-cdalab/pc-2",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/pc-2",
+        "clab-node-name": "pc-2",
+        "clab-node-type": "",
+        "clab-owner": "tom",
+        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "containerlab": "cdalab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc-3": {
+      "index": "12",
+      "shortname": "pc-3",
+      "longname": "clab-cdalab-pc-3",
+      "fqdn": "pc-3.cdalab.io",
+      "group": "",
+      "labdir": "/home/tom/containerlab/cda/clab-cdalab/pc-3",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/pc-3",
+        "clab-node-name": "pc-3",
+        "clab-node-type": "",
+        "clab-owner": "tom",
+        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "containerlab": "cdalab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc-4": {
+      "index": "13",
+      "shortname": "pc-4",
+      "longname": "clab-cdalab-pc-4",
+      "fqdn": "pc-4.cdalab.io",
+      "group": "",
+      "labdir": "/home/tom/containerlab/cda/clab-cdalab/pc-4",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ab78a95824b2",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tom/containerlab/cda/clab-cdalab/pc-4",
+        "clab-node-name": "pc-4",
+        "clab-node-type": "",
+        "clab-owner": "tom",
+        "clab-topo-file": "/home/tom/containerlab/cda/cdalab.clab.yaml",
+        "containerlab": "cdalab"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "csw-1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:54:c2:24",
+        "peer": "z"
+      },
+      "z": {
+        "node": "csw-2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:1c:f0:27",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "csw-1",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:f5:e9:61",
+        "peer": "z"
+      },
+      "z": {
+        "node": "dsw-1",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:00:44:a1",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "csw-1",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:bf:96:ef",
+        "peer": "z"
+      },
+      "z": {
+        "node": "dsw-2",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:72:c3:87",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "csw-1",
+        "interface": "eth6",
+        "mac": "aa:c1:ab:c1:28:76",
+        "peer": "z"
+      },
+      "z": {
+        "node": "dsw-3",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:52:c6:31",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "csw-1",
+        "interface": "eth7",
+        "mac": "aa:c1:ab:cf:6e:34",
+        "peer": "z"
+      },
+      "z": {
+        "node": "dsw-4",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:47:e1:45",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "csw-2",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:da:34:25",
+        "peer": "z"
+      },
+      "z": {
+        "node": "dsw-1",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:6a:de:de",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "csw-2",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:49:c2:77",
+        "peer": "z"
+      },
+      "z": {
+        "node": "dsw-2",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:d2:80:9d",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "csw-2",
+        "interface": "eth6",
+        "mac": "aa:c1:ab:06:fa:58",
+        "peer": "z"
+      },
+      "z": {
+        "node": "dsw-3",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:2e:9c:11",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "csw-2",
+        "interface": "eth7",
+        "mac": "aa:c1:ab:a5:35:6d",
+        "peer": "z"
+      },
+      "z": {
+        "node": "dsw-4",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:ca:ca:3c",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "dsw-1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:64:54:43",
+        "peer": "z"
+      },
+      "z": {
+        "node": "dsw-2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:b3:b7:bc",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "dsw-1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:4c:5b:39",
+        "peer": "z"
+      },
+      "z": {
+        "node": "dsw-2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:12:f9:db",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "dsw-3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:0a:27:aa",
+        "peer": "z"
+      },
+      "z": {
+        "node": "dsw-4",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:f9:a5:05",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "dsw-3",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:76:5f:d2",
+        "peer": "z"
+      },
+      "z": {
+        "node": "dsw-4",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:56:42:ad",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "dsw-1",
+        "interface": "eth8",
+        "mac": "aa:c1:ab:64:25:da",
+        "peer": "z"
+      },
+      "z": {
+        "node": "asw-100",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:2e:c5:b9",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "dsw-1",
+        "interface": "eth9",
+        "mac": "aa:c1:ab:d2:9d:96",
+        "peer": "z"
+      },
+      "z": {
+        "node": "asw-101",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:2c:ed:c5",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "dsw-2",
+        "interface": "eth8",
+        "mac": "aa:c1:ab:56:03:09",
+        "peer": "z"
+      },
+      "z": {
+        "node": "asw-100",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:f5:07:ae",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "dsw-2",
+        "interface": "eth9",
+        "mac": "aa:c1:ab:92:fc:71",
+        "peer": "z"
+      },
+      "z": {
+        "node": "asw-101",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:43:a8:c4",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "dsw-3",
+        "interface": "eth8",
+        "mac": "aa:c1:ab:50:06:c8",
+        "peer": "z"
+      },
+      "z": {
+        "node": "asw-200",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:ae:78:f0",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "dsw-3",
+        "interface": "eth9",
+        "mac": "aa:c1:ab:a9:6f:b7",
+        "peer": "z"
+      },
+      "z": {
+        "node": "asw-201",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:1d:fb:86",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "dsw-4",
+        "interface": "eth8",
+        "mac": "aa:c1:ab:bd:9b:1a",
+        "peer": "z"
+      },
+      "z": {
+        "node": "asw-200",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:64:89:6d",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "dsw-4",
+        "interface": "eth9",
+        "mac": "aa:c1:ab:2b:74:08",
+        "peer": "z"
+      },
+      "z": {
+        "node": "asw-201",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:b1:df:28",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "asw-100",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:b3:1a:d3",
+        "peer": "z"
+      },
+      "z": {
+        "node": "pc-1",
+        "interface": "eth0",
+        "mac": "aa:c1:ab:fe:92:d1",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "asw-101",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:64:72:04",
+        "peer": "z"
+      },
+      "z": {
+        "node": "pc-2",
+        "interface": "eth0",
+        "mac": "aa:c1:ab:a2:cb:c3",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "asw-200",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:f3:1c:68",
+        "peer": "z"
+      },
+      "z": {
+        "node": "pc-3",
+        "interface": "eth0",
+        "mac": "aa:c1:ab:f8:47:87",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "asw-201",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:d9:7e:25",
+        "peer": "z"
+      },
+      "z": {
+        "node": "pc-4",
+        "interface": "eth0",
+        "mac": "aa:c1:ab:ce:2e:8b",
+        "peer": "a"
+      }
+    }
+  ]
+}

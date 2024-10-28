@@ -1,0 +1,43 @@
+all:
+  vars:
+    # The generated inventory is assumed to be used from the clab host.
+    # Hence no http proxy should be used. Therefore we make sure the http
+    # module does not attempt using any global http proxy.
+    ansible_httpapi_use_proxy: false
+  children:
+    cisco_iol:
+      vars:
+        # ansible_connection: set ansible_connection variable if required
+        ansible_user: admin
+        ansible_password: admin
+      hosts:
+        clab-cdalab-asw-100:
+          ansible_host: 172.10.101.17
+        clab-cdalab-asw-101:
+          ansible_host: 172.10.101.18
+        clab-cdalab-asw-200:
+          ansible_host: 172.10.101.19
+        clab-cdalab-asw-201:
+          ansible_host: 172.10.101.20
+        clab-cdalab-csw-1:
+          ansible_host: 172.10.101.11
+        clab-cdalab-csw-2:
+          ansible_host: 172.10.101.12
+        clab-cdalab-dsw-1:
+          ansible_host: 172.10.101.13
+        clab-cdalab-dsw-2:
+          ansible_host: 172.10.101.14
+        clab-cdalab-dsw-3:
+          ansible_host: 172.10.101.15
+        clab-cdalab-dsw-4:
+          ansible_host: 172.10.101.16
+    linux:
+      hosts:
+        clab-cdalab-pc-1:
+          ansible_host: 
+        clab-cdalab-pc-2:
+          ansible_host: 
+        clab-cdalab-pc-3:
+          ansible_host: 
+        clab-cdalab-pc-4:
+          ansible_host: 

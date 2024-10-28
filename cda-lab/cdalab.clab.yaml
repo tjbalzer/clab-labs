@@ -1,0 +1,147 @@
+name: cdalab
+
+mgmt:
+  network: cda
+  ipv4-subnet: 172.10.101.0/24
+
+topology:
+  nodes:
+    csw-1:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:L2-17.12.01
+      type: l2
+      mgmt-ipv4: 172.10.101.11
+    csw-2:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:L2-17.12.01
+      type: l2
+      mgmt-ipv4: 172.10.101.12
+      stages:
+        create:
+          wait-for:
+            - node: csw-1
+              stage: configure
+    dsw-1:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:L2-17.12.01
+      type: l2
+      mgmt-ipv4: 172.10.101.13
+      stages:
+        create:
+          wait-for:
+            - node: csw-2
+              stage: configure
+    dsw-2:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:L2-17.12.01
+      type: l2
+      mgmt-ipv4: 172.10.101.14
+      stages:
+        create:
+          wait-for:
+            - node: dsw-1
+              stage: configure
+    dsw-3:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:L2-17.12.01
+      type: l2
+      mgmt-ipv4: 172.10.101.15
+      stages:
+        create:
+          wait-for:
+            - node: dsw-2
+              stage: configure
+    dsw-4:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:L2-17.12.01
+      type: l2
+      mgmt-ipv4: 172.10.101.16
+      stages:
+        create:
+          wait-for:
+            - node: dsw-3
+              stage: configure
+    asw-100:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:L2-17.12.01
+      type: l2
+      mgmt-ipv4: 172.10.101.17
+      stages:
+        create:
+          wait-for:
+            - node: dsw-4
+              stage: configure
+    asw-101:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:L2-17.12.01
+      type: l2
+      mgmt-ipv4: 172.10.101.18
+      stages:
+        create:
+          wait-for:
+            - node: asw-100
+              stage: configure
+    asw-200:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:L2-17.12.01
+      type: l2
+      mgmt-ipv4: 172.10.101.19
+      stages:
+        create:
+          wait-for:
+            - node: asw-101
+              stage: configure
+    asw-201:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:L2-17.12.01
+      type: l2
+      mgmt-ipv4: 172.10.101.20
+      stages:
+        create:
+          wait-for:
+            - node: asw-200
+              stage: configure
+    pc-1:
+      kind: linux
+      image: alpine:latest
+      network-mode: none
+    pc-2:
+      kind: linux
+      image: alpine:latest
+      network-mode: none
+    pc-3:
+      kind: linux
+      image: alpine:latest
+      network-mode: none
+    pc-4:
+      kind: linux
+      image: alpine:latest
+      network-mode: none
+
+  links:
+    - endpoints: ["csw-1:e0/1", "csw-2:e0/1"]
+    - endpoints: ["csw-1:e1/0", "dsw-1:e1/0"]
+    - endpoints: ["csw-1:e1/1", "dsw-2:e1/0"]
+    - endpoints: ["csw-1:e1/2", "dsw-3:e1/0"]
+    - endpoints: ["csw-1:e1/3", "dsw-4:e1/0"]
+    - endpoints: ["csw-2:e1/0", "dsw-1:e1/1"]
+    - endpoints: ["csw-2:e1/1", "dsw-2:e1/1"]
+    - endpoints: ["csw-2:e1/2", "dsw-3:e1/1"]
+    - endpoints: ["csw-2:e1/3", "dsw-4:e1/1"]
+    - endpoints: ["dsw-1:e0/1", "dsw-2:e0/1"]
+    - endpoints: ["dsw-1:e0/2", "dsw-2:e0/2"]
+    - endpoints: ["dsw-3:e0/1", "dsw-4:e0/1"]
+    - endpoints: ["dsw-3:e0/2", "dsw-4:e0/2"]
+    - endpoints: ["dsw-1:e2/0", "asw-100:e0/1"]
+    - endpoints: ["dsw-1:e2/1", "asw-101:e0/1"]
+    - endpoints: ["dsw-2:e2/0", "asw-100:e0/2"]
+    - endpoints: ["dsw-2:e2/1", "asw-101:e0/2"]
+    - endpoints: ["dsw-3:e2/0", "asw-200:e0/1"]
+    - endpoints: ["dsw-3:e2/1", "asw-201:e0/1"]
+    - endpoints: ["dsw-4:e2/0", "asw-200:e0/2"]
+    - endpoints: ["dsw-4:e2/1", "asw-201:e0/2"]
+    - endpoints: ["asw-100:e0/3", "pc-1:eth0"]
+    - endpoints: ["asw-101:e0/3", "pc-2:eth0"]
+    - endpoints: ["asw-200:e0/3", "pc-3:eth0"]
+    - endpoints: ["asw-201:e0/3", "pc-4:eth0"]
+
