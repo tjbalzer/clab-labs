@@ -84,6 +84,12 @@ topology:
       exec:
         - ip address add 10.192.201.100/24 dev eth1
         - ip route add 10.192.0.0/16 via 10.192.201.1 dev eth1
+    sq:
+      kind: linux
+      mgmt-ipv4: 172.10.101.100
+      image: netenglabs/suzieq:latest
+      binds:
+        - inventory.yaml:/tmp/inventory.yaml
 
   links:
     - endpoints: ["csw-1:e0/1", "csw-2:e0/1"]

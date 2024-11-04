@@ -41,3 +41,5 @@ all:
           ansible_host: 172.10.101.53
         clab-cdalab-pc-4:
           ansible_host: 172.10.101.54
+        clab-cdalab-sq:
+          ansible_host: 172.10.101.100
