@@ -1,0 +1,77 @@
+!
+username tom privilege 15 password 0 cisco
+!
+vtp domain cda
+vtp mode transparent
+!
+!
+!
+ip domain name cda.lab
+!
+vlan 101
+ name User-VLAN-101
+lldp run
+!
+interface Ethernet0/1
+ description DSW1
+ switchport access vlan 101
+ switchport mode access
+!
+interface Ethernet0/2
+ description DSW2
+ switchport access vlan 101
+ switchport mode access
+!
+interface Ethernet0/3
+ switchport access vlan 101
+ switchport mode access
+ shutdown 
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface Ethernet1/0
+ switchport access vlan 101
+ switchport mode access
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface Ethernet1/1
+ switchport access vlan 101
+ switchport mode access
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface Ethernet1/2
+ switchport access vlan 101
+ switchport mode access
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface Ethernet1/3
+ switchport access vlan 101
+ switchport mode access
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface Vlan1
+ no ip address
+ no ip route-cache
+ shutdown
+!
+interface Vlan101
+ ip address 10.192.101.10 255.255.255.0
+ no ip proxy-arp
+ no ip route-cache
+ no shutdown
+!
+no ip http server
+no ip http secure-server
+!
+ip route 0.0.0.0 0.0.0.0 10.192.101.1
+ip ssh version 2
+ip scp server enable
+!
+alias exec sir show ip route
+alias exec svb show vlan brief
+alias exec siib show ip int brief 
+
