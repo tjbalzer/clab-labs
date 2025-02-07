@@ -1,0 +1,164 @@
+name: cdalab-viosl2
+
+mgmt:
+  network: cda
+  ipv4-subnet: 172.10.102.0/24
+
+topology:
+  nodes:
+    csw-1:
+      kind: linux
+      image: vrnetlab/cisco_viosl2:15.2.2020
+      binds:
+        - configs/csw-1.cfg:/config/startup-config.cfg
+      mgmt-ipv4: 172.10.102.11
+      group: superspine
+      env:
+        HOSTNAME: csw-1
+    csw-2:
+      kind: linux
+      image: vrnetlab/cisco_viosl2:15.2.2020
+      binds:
+        - configs/csw-2.cfg:/config/startup-config.cfg
+      mgmt-ipv4: 172.10.102.12
+      group: superspine
+      env:
+        HOSTNAME: csw-2
+    dsw-1:
+      kind: linux
+      image: vrnetlab/cisco_viosl2:15.2.2020
+      binds:
+        - configs/dsw-1.cfg:/config/startup-config.cfg
+      mgmt-ipv4: 172.10.102.13
+      group: spine
+      env:
+        HOSTNAME: dsw-1
+    dsw-2:
+      kind: linux
+      image: vrnetlab/cisco_viosl2:15.2.2020
+      binds:
+        - configs/dsw-2.cfg:/config/startup-config.cfg
+      mgmt-ipv4: 172.10.102.14
+      group: spine
+      env:
+        HOSTNAME: dsw-2
+    dsw-3:
+      kind: linux
+      image: vrnetlab/cisco_viosl2:15.2.2020
+      binds:
+        - configs/dsw-3.cfg:/config/startup-config.cfg
+      mgmt-ipv4: 172.10.102.15
+      group: spine
+      env:
+        HOSTNAME: dsw-3
+    dsw-4:
+      kind: linux
+      image: vrnetlab/cisco_viosl2:15.2.2020
+      binds:
+        - configs/dsw-4.cfg:/config/startup-config.cfg
+      mgmt-ipv4: 172.10.102.16
+      group: spine
+      env:
+        HOSTNAME: dsw-4
+    asw-100:
+      kind: linux
+      image: vrnetlab/cisco_viosl2:15.2.2020
+      binds:
+        - configs/asw-100.cfg:/config/startup-config.cfg
+      mgmt-ipv4: 172.10.102.17
+      group: leaf
+      env:
+        HOSTNAME: asw-100
+    asw-101:
+      kind: linux
+      image: vrnetlab/cisco_viosl2:15.2.2020
+      binds:
+        - configs/asw-101.cfg:/config/startup-config.cfg
+      mgmt-ipv4: 172.10.102.18
+      group: leaf
+      env:
+        HOSTNAME: csw-2
+    asw-200:
+      kind: linux
+      image: vrnetlab/cisco_viosl2:15.2.2020
+      binds:
+        - configs/asw-200.cfg:/config/startup-config.cfg
+      mgmt-ipv4: 172.10.102.19
+      group: leaf
+      env:
+        HOSTNAME: csw-1
+    asw-201:
+      kind: linux
+      image: vrnetlab/cisco_viosl2:15.2.2020
+      binds:
+        - configs/asw-201.cfg:/config/startup-config.cfg
+      mgmt-ipv4: 172.10.102.20
+      group: leaf
+      env:
+        HOSTNAME: csw-2
+    pc-1:
+      kind: linux
+      mgmt-ipv4: 172.10.102.51
+      image: ghcr.io/srl-labs/network-multitool
+      exec:
+        - ip address add 10.192.100.100/24 dev eth1
+        - ip route add 10.192.0.0/16 via 10.192.100.1 dev eth1
+      group: server
+    pc-2:
+      kind: linux
+      mgmt-ipv4: 172.10.102.52
+      image: ghcr.io/srl-labs/network-multitool
+      exec:
+        - ip address add 10.192.101.100/24 dev eth1
+        - ip route add 10.192.0.0/16 via 10.192.101.1 dev eth1
+      group: server
+    pc-3:
+      kind: linux
+      mgmt-ipv4: 172.10.102.53
+      image: ghcr.io/srl-labs/network-multitool
+      exec:
+        - ip address add 10.192.200.100/24 dev eth1
+        - ip route add 10.192.0.0/16 via 10.192.200.1 dev eth1
+      group: server
+    pc-4:
+      kind: linux
+      mgmt-ipv4: 172.10.102.54
+      image: ghcr.io/srl-labs/network-multitool
+      exec:
+        - ip address add 10.192.201.100/24 dev eth1
+        - ip route add 10.192.0.0/16 via 10.192.201.1 dev eth1
+      group: server
+    sq:
+      kind: linux
+      mgmt-ipv4: 172.10.102.100
+      image: netenglabs/suzieq:latest
+      binds:
+        - inventory.yaml:/tmp/inventory.yaml
+
+  links:
+    - endpoints: ["csw-1:eth1", "csw-2:eth1"]
+    - endpoints: ["csw-1:eth4", "dsw-1:eth4"]
+    - endpoints: ["csw-1:eth5", "dsw-2:eth4"]
+    - endpoints: ["csw-1:eth6", "dsw-3:eth4"]
+    - endpoints: ["csw-1:eth7", "dsw-4:eth4"]
+    - endpoints: ["csw-2:eth4", "dsw-1:eth5"]
+    - endpoints: ["csw-2:eth5", "dsw-2:eth5"]
+    - endpoints: ["csw-2:eth6", "dsw-3:eth5"]
+    - endpoints: ["csw-2:eth7", "dsw-4:eth5"]
+    - endpoints: ["dsw-1:eth1", "dsw-2:eth1"]
+    - endpoints: ["dsw-1:eth2", "dsw-2:eth2"]
+    - endpoints: ["dsw-3:eth1", "dsw-4:eth1"]
+    - endpoints: ["dsw-3:eth2", "dsw-4:eth2"]
+    - endpoints: ["dsw-1:eth8", "asw-100:eth1"]
+    - endpoints: ["dsw-1:eth9", "asw-101:eth1"]
+    - endpoints: ["dsw-2:eth8", "asw-100:eth2"]
+    - endpoints: ["dsw-2:eth9", "asw-101:eth2"]
+    - endpoints: ["dsw-3:eth8", "asw-200:eth1"]
+    - endpoints: ["dsw-3:eth9", "asw-201:eth1"]
+    - endpoints: ["dsw-4:eth8", "asw-200:eth2"]
+    - endpoints: ["dsw-4:eth9", "asw-201:eth2"]
+    - endpoints: ["asw-100:eth3", "pc-1:eth1"]
+    - endpoints: ["asw-101:eth3", "pc-2:eth1"]
+    - endpoints: ["asw-200:eth3", "pc-3:eth1"]
+    - endpoints: ["asw-201:eth3", "pc-4:eth1"]
+
